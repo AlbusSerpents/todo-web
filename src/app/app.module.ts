@@ -12,4 +12,4 @@ import { TodoModule } from './todo/todo.module';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

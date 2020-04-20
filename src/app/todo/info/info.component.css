@@ -1,0 +1,42 @@
+.row {
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.3rem;
+  background-color: var(--primary-color);
+}
+
+.row-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.left-element {
+  margin-right: 0.8rem;
+}
+
+.right-element {
+  margin-left: auto;
+}
+
+.icon-container {
+  padding: 0.3rem;
+}
+
+.name-container {
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 450px) {
+  .row {
+    height: 3rem;
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .row {
+    height: 5rem;
+    width: 300px;
+  }
+}

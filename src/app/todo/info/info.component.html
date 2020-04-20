@@ -1,1 +1,13 @@
-<p>info works!</p>
+<div class="row">
+  <div class="row-container">
+    <div class="icon-container left-element">
+      <fa-icon [icon]="iconValue()" size="2x" [fixedWidth]="true"></fa-icon>
+    </div>
+    <div class="name-container">
+      <span>{{nameValue()}}</span>
+    </div>
+    <div class="icon-container right-element">
+      <fa-icon [icon]="detailsIcon" size="2x" [fixedWidth]="true"></fa-icon>
+    </div>
+  </div>
+</div>
