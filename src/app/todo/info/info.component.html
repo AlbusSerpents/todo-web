@@ -1,13 +1,31 @@
-<div class="row">
-  <div class="row-container">
-    <div class="icon-container left-element">
-      <fa-icon [icon]="iconValue()" size="2x" [fixedWidth]="true"></fa-icon>
-    </div>
-    <div class="name-container">
-      <span>{{nameValue()}}</span>
-    </div>
-    <div class="icon-container right-element">
-      <fa-icon [icon]="detailsIcon" size="2x" [fixedWidth]="true"></fa-icon>
+<div class="info-container">
+  <div class="row">
+    <div class="row-container">
+      <div class="icon-container left-element">
+        <fa-icon [icon]="iconValue()" size="2x" [fixedWidth]="true"></fa-icon>
+      </div>
+      <div class="name-container">
+        <span>{{nameValue()}}</span>
+      </div>
+      <div class="icon-container right-element">
+        <div [className]="detailsIconClass">
+          <fa-icon (click)="updateExpand()" [icon]="detailsIcon" size="2x" [fixedWidth]="true"></fa-icon>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+
+  <div [ngClass]="[descriptionDisplayClass, 'description-containder']">
+    <span>{{ info.description }}</span>
+  </div>
+
+  <!-- <div [ngClass]="{'expanded-description': true, 'shrunk-description': !showDescription()}">
+    <span> Random pesho stuff</span>
+  </div> -->
+
+
+
+  <!-- <div class="description-containder" *ngIf="showDescription()">
+    <span>{{ info.description }}</span>
+  </div>
+</div> -->

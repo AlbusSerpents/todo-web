@@ -15,7 +15,7 @@ export class ListComponent implements OnInit {
     id: "5678",
     name: "name 2",
     isDone: true,
-    description: "Description 2"
+    description: "Description 2,Description 2Description 2Description 2Description 2Description 2Description 2Description 2Description 2Description 2Description 2Description 2Description 2Description 2Description 2Description 2Description 2"
   }, {
     id: "0987",
     name: "name 3",

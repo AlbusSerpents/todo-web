@@ -3,5 +3,8 @@ body {
   font-family: "Open Sans";
 
   --primary-color: #419277e5;
-  --secondary-color: #ad9526f5;
+  --toned-color: #89ceb7b6;
+
+  --in-time: 0.15s;
+  --out-time: 0.3s;
 }

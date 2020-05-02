@@ -1,7 +1,7 @@
 <ul class="todo-list">
-  <li *ngFor="let todo of todos;">
+  <li *ngFor="let todo of todos; let i = index;">
     <div class="todo-element">
-      <app-info [info]="todo"></app-info>
+      <app-info [info]="todo" [index]="i"></app-info>
     </div>
   </li>
 </ul>
