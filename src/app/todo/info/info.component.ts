@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { TodoInfo } from '../todo.interfaces';
+import { TodoDetails } from '../todo.interfaces';
 
 import { faCheckCircle, faCircle, faChevronDown, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
@@ -17,7 +17,7 @@ export class InfoComponent {
   detailsIcon = faChevronDown;
 
   @Input()
-  info: TodoInfo;
+  info: TodoDetails;
 
   @Output()
   doneChanged = new EventEmitter<string>();

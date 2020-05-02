@@ -1,0 +1,7 @@
+.todo-list {
+  list-style: none;
+}
+
+.todo-list .todo-element {
+  margin: 0.3rem;
+}
