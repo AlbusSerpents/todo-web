@@ -45,9 +45,10 @@
 
 .shrunk-description {
   max-height: 0;
+  overflow: hidden;
   transform: scaleY(0);
   transform-origin: top;
-  transition: var(--in-time);
+  transition: var(--out-time);
 }
 
 .expanded-description {
@@ -55,7 +56,7 @@
   overflow: hidden;
   transform: scaleY(1);
   transform-origin: top;
-  transition: var(--out-time);
+  transition: var(--in-time) ease-out;
 }
 
 @media only screen and (min-width: 450px) {
